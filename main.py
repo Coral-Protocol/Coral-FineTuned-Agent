@@ -99,6 +99,8 @@ async def main():
         - Understand what kind of posts are requested 
         - fullfill the request made by agent 
         - Then call the send_message tool to send the generated posts back the agent that requested the posts.
+        - IMPORTANT: When sending messages, format them correctly and avoid sending escaped characters like \n and \u200b
+        - Use proper line breaks and clean formatting without escape sequences
         - Then again keep calling wait_for_mentions tool again until you receive a mention.
         
 
